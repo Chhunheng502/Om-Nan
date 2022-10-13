@@ -1,0 +1,36 @@
+{
+  "name": "Om Nan",
+  "description": "Om Nan is a reading tool for chrome.",
+  "version": "1.0",
+  "manifest_version": 3,
+  "icons": {
+    "16": "assets/img/icon16.png",
+    "48": "assets/img/icon48.png",
+    "128": "assets/img/icon128.png"
+  },
+  "background": {
+    "service_worker": "src/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
+        "src/highlighter.js",
+        "src/content.js"
+      ]
+    }
+ ],
+  "permissions": [
+    "storage",
+    "scripting",
+    "activeTab",
+    "contextMenus"
+  ],
+  "host_permissions": [
+    "https://*/*"
+  ],
+  "action": {
+    "default_popup": "src/popup.html"
+  }
+}

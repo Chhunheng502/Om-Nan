@@ -1,0 +1,15 @@
+{
+    "name": "om-nan",
+    "version": "1.0.0",
+    "description": "",
+    "main": "highlighter.js",
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [],
+    "author": "Chhunheng Leng",
+    "license": "ISC",
+    "dependencies": {
+      "@webcomponents/custom-elements": "^1.4.3"
+    }
+  }
