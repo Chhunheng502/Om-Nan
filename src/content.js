@@ -1,8 +1,8 @@
-const mediumHighlighter = document.createElement("medium-highlighter");
-document.body.appendChild(mediumHighlighter);
+const omNanHighlighter = document.createElement("om-nan-highlighter");
+document.body.appendChild(omNanHighlighter);
 
 const setMarkerPosition = (markerPosition) =>
-  mediumHighlighter.setAttribute(
+  omNanHighlighter.setAttribute(
     "markerPosition",
     JSON.stringify(markerPosition)
   );

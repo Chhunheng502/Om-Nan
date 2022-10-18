@@ -29,6 +29,9 @@
 - Ideate for a different or additional feature
 - Personalize the code that you copied
 - Consider using OOP approach rather than procedural approach
+- Re-structure your files
+- Document your code. Explain (comment) on what each files, functions, lines do
+- Clean up your code, rename, restructure... make it standard
 
 ### Possible Questions
 

@@ -17,7 +17,8 @@
       "js": [
         "node_modules/@webcomponents/custom-elements/custom-elements.min.js",
         "src/highlighter.js",
-        "src/content.js"
+        "src/content.js",
+        "src/popup.js"
       ]
     }
  ],

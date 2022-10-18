@@ -6,16 +6,11 @@ const fetchReadingList = () => {
     });
 };
   
-const addNewArticleEventHandler = async () => {
-    const newArticle = {
-        htmlContent: currentTime,
-        pageUrl: getTime(currentTime),
-    };
-
+const addNewArticleEventHandler = async (pageUrl) => {
     currentReadingList = await fetchReadingList();
 
     chrome.storage.sync.set({
-        ['readingList']: JSON.stringify([...currentReadingList, newArticle])
+        ['readingList']: JSON.stringify([...currentReadingList, pageUrl])
     });
 };
 
